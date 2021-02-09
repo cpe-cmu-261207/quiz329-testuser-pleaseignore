@@ -1,14 +1,35 @@
 import ItemTable from "./ItemTable";
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 
 function App() {
   //add useState for all state variables
-
+  const App = () => {
+    const [name, gender, age] = useState({[
+      {title}
+    ]
+   
+  const 
   //load locationStorage
   useEffect(() => {
     const items = localStorage.getItem("items");
     // ...
   }, []);
+
+  /*
+ 
+  return (
+    <div>
+      <h1>Hello React with Local Storage!</h1>
+ 
+      <input value={value} type="text" onChange={onChange} />
+ 
+      <p>{value}</p>
+    </div>
+  );
+};
+ 
+export default App;
+  */
 
   return (
     <div className="card" style={{ width: 400 }}>
@@ -47,8 +68,9 @@ function App() {
         {/* display tables for all persons */}
         <p className="is-4 title has-text-centered">Person List</p>
         {/* sample table */}
+        <ItemTable name={"Alice"} gender={"Female"} age={""} />
         <ItemTable name={"Bob"} gender={"Male"} age={"50"} />
-        <p>Your name and code here</p>
+        <p>WARADORN SIRIPUNT 620612163</p>
       </div>
     </div>
   );
